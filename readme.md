@@ -1,25 +1,28 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/head.png" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:150px;height:150px;"/>
+  <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/head.png" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:550px;height:100px;"/>
 </p>
 <div align=center> Anxiety Prediction, Based on Taylor Manifest Anxiety Scale</div>
  
 ------------------------
+# Anxiety Prediction
+Based on Taylor Manifest Anxiety Scale by [mehrdad-dev](https://mehrdad-dev.github.io)
 
-## Anxiety Prediction
-Based on Taylor Manifest Anxiety Scale by mehrdad-dev
-
-I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale. This test published by Taylor, J in paper A personality scale of manifest anxiety (1953).
+I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale. This test published by Taylor, J in paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
 
 ## 🤖 Model
 
-You can access the model here.
+You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/tree/main/model).
 
     model version: 1.0
     model acc: 70%
 
 ## 📊 Data
 
-You can access the data here. This file contains the data without preprocessing.
+You can access the data [here](http://openpsychometrics.org/_rawdata/TMA.zip). This file contains the data without preprocessing.
 
     Number of samples: 5410
 
+## 🌟 If you like it ...
+Thanks!
+
+If you like/use this project, give me a star!
