@@ -8,18 +8,27 @@ st.markdown('Based on Taylor Manifest Anxiety Scale by [mehrdad-dev](https://meh
 
 about = """
 I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale.
-This test published by Taylor, J in paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
+This test was published by `Taylor, J.A` in paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
 
-### 🤖 Model 
+### 🌟 If you like it ...
+Thanks!, If you like/use this project, give it a star on [GitHub](https://github.com/mehrdad-dev/anxiety-predict)!
+"""
+st.markdown(about, unsafe_allow_html=True)
+
+expander = st.expander("🤖 Model ")
+model_ex = """
 You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/tree/main/model).
 - model version: 1.0
 - model acc: 70%
+"""
+expander.markdown(model_ex)
 
-### 📊 Data 
+expander = st.expander("📊 Data")
+data_ex = """
 You can access the data [here](http://openpsychometrics.org/_rawdata/TMA.zip). This file contains the data without preprocessing.
 - Number of samples: 5410
 """
-st.markdown(about, unsafe_allow_html=True)
+expander.markdown(data_ex)
 
 
 st.markdown('&nbsp;', unsafe_allow_html=True)
@@ -274,19 +283,16 @@ if pressed:
     model_input = np.array([model_input])
     temp_df = pd.DataFrame(model_input)
     pred = model.predict(temp_df)
-    right_column.info('Your Score is:' + str(pred[0][0]))
+    st.info('Your score is:' + str(pred[0][0]) + 'of 50')
+    st.info('Scores higher than 25 indicate abnormal levels on anxiety.')
 #    right_column.write('Your Score is:' + str(pred[0][0]))
 
 
 # st.info('This is a purely informational message')
-
-#expander = st.expander("FAQ")
-#expander.write("Here you could put in some really, really long explanations...")
-
 #title = st.text_input('Movie title', 'Life of Brian')
 
 
 img = st.sidebar.image('images/head.png', width=200)
 st.sidebar.markdown('## **Project Links:**', unsafe_allow_html=True)
-st.sidebar.markdown('[Github](https://github.com/mehrdad-dev/anxiety-predict)', unsafe_allow_html=True)
+st.sidebar.markdown('[GitHub](https://github.com/mehrdad-dev/anxiety-predict)', unsafe_allow_html=True)
 st.sidebar.markdown('[Website](https://mehrdad-dev.github.io)', unsafe_allow_html=True)
