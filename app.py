@@ -256,7 +256,8 @@ if pressed:
     model_input = create_model_input(answers)
     model = tf.keras.models.load_model('model')
     model_input = np.array([model_input])
-    temp_df = pd.DataFrame(model_input.T)
+    model_input = model_input.T
+    temp_df = pd.DataFrame(model_input)
     pred = model.predict(temp_df)
     right_column.info('Your Score is:' + str(pred[0][0]))
 #    right_column.write('Your Score is:' + str(pred[0][0]))
