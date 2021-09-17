@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/head.png" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:150px;height:150px;"/>
 </p>
-<div align=center> Anxiety Prediction, Based on Taylor Manifest Anxiety Scale 
+<div align=center> Anxiety prediction using deep learning , Based on Taylor Manifest Anxiety Scale 
   
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mehrdad-dev/anxiety-predict/main/app.py)
 </div>
