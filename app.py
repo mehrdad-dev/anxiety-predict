@@ -1,15 +1,31 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import tensorflow as tf
+# import tensorflow as tf
 
 st.title('Anxiety Prediction')
-st.markdown('Based on Taylor Manifest Anxiety Scale', unsafe_allow_html=True)
+st.markdown('Based on Taylor Manifest Anxiety Scale by [mehrdad-dev](https://mehrdad-dev.github.io)', unsafe_allow_html=True)
+
+about = """
+I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale.
+This test published by Taylor, J in paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
+
+### 🤖 Model 
+You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/tree/main/model).
+- model version: 1.0
+- model acc: 70%
+
+### 📊 Data 
+You can access the data [here](http://openpsychometrics.org/_rawdata/TMA.zip). This file contains the data without preprocessing.
+- Number of samples: 5410
+"""
+st.markdown(about, unsafe_allow_html=True)
+
 
 st.markdown('&nbsp;', unsafe_allow_html=True)
 
 
-st.markdown('## Notes:', unsafe_allow_html=True)
+st.markdown('## ❗️ Notes:', unsafe_allow_html=True)
 notes = """
 - This Test have 50 question with True/False answers.
 - It's takes 4-10 minutes to complete.
@@ -41,8 +57,8 @@ def create_model_input(answers):
 
 ## ================================================================================================
 
-st.markdown('<h4>How old are you?</h4>', unsafe_allow_html=True)
-age = st.slider('', 14, 100, 21)
+st.markdown('<h4> How old are you? </h4>', unsafe_allow_html=True)
+age = st.slider('', 15, 100, 21)
 answers.append(age)
 
 st.markdown('<h4>What is your gender? </h4>', unsafe_allow_html=True)
@@ -270,6 +286,7 @@ if pressed:
 #title = st.text_input('Movie title', 'Life of Brian')
 
 
-#option = st.sidebar.selectbox(
-#    'Which number do you like best?',
-#     '1')
+img = st.sidebar.image('images/head.png', width=200)
+st.sidebar.markdown('## **Project Links:**', unsafe_allow_html=True)
+st.sidebar.markdown('[Github](https://github.com/mehrdad-dev/anxiety-predict)', unsafe_allow_html=True)
+st.sidebar.markdown('[Website](https://mehrdad-dev.github.io)', unsafe_allow_html=True)
