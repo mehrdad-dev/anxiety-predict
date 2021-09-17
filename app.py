@@ -254,7 +254,7 @@ left_column, right_column = st.columns(2)
 pressed = left_column.button('Predict!')
 if pressed:
     model_input = create_model_input(answers)
-    model = tf.keras.models.load_model('../model/saved_model.pb')
+    model = tf.keras.models.load_model('/model/saved_model.pb')
     model_input = np.array([model_input])
     temp_df = pd.DataFrame(model_input.T)
     pred = model.predict(temp_df)
