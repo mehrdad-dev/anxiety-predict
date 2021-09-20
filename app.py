@@ -18,8 +18,8 @@ st.markdown(about, unsafe_allow_html=True)
 expander = st.expander("🤖 Model ")
 model_ex = """
 You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/tree/main/model).
-- model version: 1.0
-- model acc: 70%
+- model version: 2.0
+- model metrics: mse: 0.0253 - mae: 0.1163 - root_mean_squared_error: 0.1590
 """
 expander.markdown(model_ex)
 
@@ -67,12 +67,11 @@ def create_model_input(answers):
 ## ================================================================================================
 
 st.markdown('<h4> How old are you? </h4>', unsafe_allow_html=True)
-age = st.slider('', 15, 100, 21)
+age = st.slider('', 14, 100, 21)
 answers.append(age)
 
-st.markdown('<h4>What is your gender? </h4>', unsafe_allow_html=True)
+st.markdown('<h4>What is your gender? </h4>', unsafe_allow_html=True)       
 sex = st.selectbox('', ('Male', 'Female', 'Other'))
-answers.append(sex)
 
 st.markdown('<h4>Q1. I do not tire quickly. </h4>', unsafe_allow_html=True)
 q1 = st.selectbox('', ('True', 'False'), key='q1')
@@ -273,6 +272,14 @@ answers.append(q49)
 st.markdown('<h4>Q50. I am entirely self-confident. </h4>', unsafe_allow_html=True)
 q50 = st.selectbox('', ('True', 'False'), key='q50')
 answers.append(q50)
+
+
+if sex == 'Female':
+    answers.append([1, 0, 0])
+elif sex == 'Male':
+    answers.append([0, 1, 0])
+else:
+    answers.append([0, 0, 1])
 
 
 left_column, right_column = st.columns(2)
