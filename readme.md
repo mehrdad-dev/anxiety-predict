@@ -22,6 +22,10 @@ You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/t
 
     model version: 1.0
     model acc: 70%
+    
+train loss vs validation loss:
+<img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/loss.jpg" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:150px;height:150px;"/>
+    
 
 ## 📊 Data
 
