@@ -20,13 +20,12 @@ Go to the [website](https://share.streamlit.io/mehrdad-dev/anxiety-predict/main/
 
 You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/tree/main/model).
 
-    model version: 1.0
-    model acc: 70%
+    model version: 2.0
+    model metrics: mse: 0.0253 - mae: 0.1163 - root_mean_squared_error: 0.1590
     
 train loss vs validation loss:
 <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/loss.jpg" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:150px;height:150px;"/>
     
-
 ## 📊 Data
 
 You can access the data [here](http://openpsychometrics.org/_rawdata/TMA.zip). This file contains the data without preprocessing.
