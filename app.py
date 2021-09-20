@@ -275,11 +275,17 @@ answers.append(q50)
 
 
 if sex == 'Female':
-    answers.append([1, 0, 0])
+    answers.append([1])
+    answers.append([0])    
+    answers.append([0])    
 elif sex == 'Male':
-    answers.append([0, 1, 0])
+    answers.append([0])
+    answers.append([1])    
+    answers.append([0])  
 else:
-    answers.append([0, 0, 1])
+    answers.append([0])
+    answers.append([0])    
+    answers.append([1])  
 
 
 left_column, right_column = st.columns(2)
