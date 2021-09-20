@@ -24,6 +24,7 @@ You can access the model [here](https://github.com/mehrdad-dev/anxiety-predict/t
     model metrics: mse: 0.0253 - mae: 0.1163 - root_mean_squared_error: 0.1590
     
 train loss vs validation loss:
+
 <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/photo_2021-09-20_17-45-36.jpg" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian"/>
     
 ## 📊 Data
