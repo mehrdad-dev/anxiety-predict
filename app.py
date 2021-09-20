@@ -290,10 +290,8 @@ if pressed:
     model_input = np.array([model_input])
     temp_df = pd.DataFrame(model_input)
     pred = model.predict(temp_df)
-    st.info('Your score is:' + str(pred[0][0]) + 'of 50')
+    st.info('Your score is: ' + str(pred[0][0]) + ' of 50')
     st.info('Scores higher than 25 indicate abnormal levels on anxiety.')
-#    right_column.write('Your Score is:' + str(pred[0][0]))
-
 
 # st.info('This is a purely informational message')
 #title = st.text_input('Movie title', 'Life of Brian')
