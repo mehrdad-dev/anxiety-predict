@@ -52,13 +52,7 @@ def create_model_input(answers):
         if ans == 'True':
             answers[key] = 1
         elif ans == 'False':
-            answers[key] = 0
-        elif ans == 'Male':
-            answers[key] = 1
-        elif ans == 'Female':
-            answers[key] = 2  
-        elif ans == 'Other':
-            answers[key] = 3                     
+            answers[key] = 0                 
         else:
             answers[key] = ans
 
@@ -275,17 +269,17 @@ answers.append(q50)
 
 
 if sex == 'Female':
-    answers.append([1])
-    answers.append([0])    
-    answers.append([0])    
+    answers.append(1)
+    answers.append(0)    
+    answers.append(0)    
 elif sex == 'Male':
-    answers.append([0])
-    answers.append([1])    
-    answers.append([0])  
+    answers.append(0)
+    answers.append(1)    
+    answers.append(0)  
 else:
-    answers.append([0])
-    answers.append([0])    
-    answers.append([1])  
+    answers.append(0)
+    answers.append(0)    
+    answers.append(1)  
 
 
 left_column, right_column = st.columns(2)
