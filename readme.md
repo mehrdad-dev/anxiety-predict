@@ -10,9 +10,9 @@
 
 
 # Anxiety Prediction
-Based on Taylor Manifest Anxiety Scale by [mehrdad-dev](https://mehrdad-dev.github.io)
+Based on the Taylor Manifest Anxiety Scale by [mehrdad-dev](https://mehrdad-dev.github.io)
 
-I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale. This test published by `Taylor, J.A` in paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
+I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale. This test was published by `Taylor, J.A` in the paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
 
 
 ## Demo Website
