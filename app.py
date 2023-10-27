@@ -36,9 +36,9 @@ st.markdown('&nbsp;', unsafe_allow_html=True)
 
 st.markdown('## ❗️ Notes:', unsafe_allow_html=True)
 notes = """
-- This Test have 50 question with True/False answers.
-- It's takes 4-10 minutes to complete.
-- You shuld to answer all the questions.
+- This Test has 50 questions with True/False answers.
+- It takes 4-10 minutes to complete.
+- You should answer all the questions.
 """
 st.markdown(notes, unsafe_allow_html=True)
 st.markdown('&nbsp;', unsafe_allow_html=True)
