@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/mehrdad-dev/anxiety-predict/main/images/head.png" alt="Taylor Manifest Anxiety Scale, mehrdad mohammadian" style="width:150px;height:150px;"/>
 </p>
-<div align=center> Anxiety prediction using deep learning , Based on Taylor Manifest Anxiety Scale 
+<div align=center> Anxiety prediction using deep learning based on the Taylor Manifest Anxiety Scale 
   
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mehrdad-dev/anxiety-predict/main/app.py)
 </div>
@@ -10,7 +10,7 @@
 
 
 # Anxiety Prediction
-Based on the Taylor Manifest Anxiety Scale by [mehrdad-dev](https://mehrdad-dev.github.io)
+Based on the Taylor Manifest Anxiety Scale
 
 I provide a deep learning model for predicting the anxiety level of a person based on the Taylor Manifest Anxiety Scale. This test was published by `Taylor, J.A` in the paper [A personality scale of manifest anxiety (1953)](https://sci-hub.se/https://doi.org/10.1037/h0056264).
 
@@ -34,10 +34,3 @@ train loss vs validation loss:
 You can access the data [here](http://openpsychometrics.org/_rawdata/TMA.zip). This file contains the data without preprocessing.
 
     Number of samples: 5410
-
-
-<a href="https://www.buymeacoffee.com/mehrdaddev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-<a href="http://www.coffeete.ir/mehrdad-dev">
-       <img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
-</a>
